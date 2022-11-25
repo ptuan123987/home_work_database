@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+import { userStore } from './store/users_store'
+const app = createApp(App)
+app.use(userStore)
+app.mount('#app')

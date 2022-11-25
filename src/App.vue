@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="">
+    <CreateForm/>
+    <UsersList/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import UsersList from './components/UsersList.vue'
+import CreateForm from './components/CreateForm.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    UsersList,
+    CreateForm
   }
 }
 </script>
@@ -23,4 +26,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+@import'~bootstrap/dist/css/bootstrap.css'
 </style>
